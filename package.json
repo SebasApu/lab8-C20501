@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "dev": "servor src/ index.html 1234 --reload",
-   "deploy": "gh-pages -d src"
+  "dev": "servor src/ index.html 1234 --reload",
+   "deploy": "gh-pages -d src/"
   },
   "keywords": [],
   "author": "",
