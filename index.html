@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVMaze - Buscador de Series</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-icon">🎬</span>
+                    <span class="title-text">TVMaze</span>
+                </h1>
+                <p class="hero-subtitle">Descubre tu próxima serie favorita</p>
+                
+                <div class="search-box">
+                    <div class="search-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="searchInput" placeholder="Buscar series, actores, géneros...">
+                    </div>
+                    <button id="searchBtn">
+                        <span>Buscar</span>
+                    </button>
+                </div>
+
+                <div class="quick-filters">
+                    <button class="filter-chip" data-filter="action">🎯 Acción</button>
+                    <button class="filter-chip" data-filter="comedy">😂 Comedia</button>
+                    <button class="filter-chip" data-filter="drama">🎭 Drama</button>
+                    <button class="filter-chip" data-filter="horror">👻 Terror</button>
+                </div>
+            </div>
+        </header>
+
+        <main id="results" class="results-grid">
+            <!-- Aquí se cargarán las series -->
+        </main>
+    </div>
+
+    <!-- Modal para episodios -->
+    <div id="episodesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Episodios</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Aquí se cargarán los episodios -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
