@@ -4,7 +4,7 @@
   "description": "Buscador de series usando la API de TVMaze",
   "main": "index.js",
   "scripts": {
-    "dev": "servor . index.html 1234 --reload",
+    "dev": "servor ./src index.html 1234 --reload",
     "deploy": "gh-pages -d src/"
 
   },
