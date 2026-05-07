@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "dev": "servor . index.html 1234 --reload",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d src/"
   },
-  "keywords": ["tvmaze", "api", "javascript"],
+  "keywords": [
+    "tvmaze",
+    "api",
+    "javascript"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.32.1",
   "dependencies": {
     "servor": "^4.0.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
